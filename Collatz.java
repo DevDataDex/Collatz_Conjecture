@@ -2,7 +2,8 @@ import java.util.Scanner;
 public class Collatz {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int mew = 10000;
+        System.out.println("How high would you like to go?");
+        int mew = scn.nextInt();
         for (int dig = 1; dig <= mew; dig++) {
             System.out.print(dig + ": ");
             int let = dig;
